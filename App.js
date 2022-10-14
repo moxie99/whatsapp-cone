@@ -1,13 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import ChatScreen from "./src/screens/ChatScreen";
-import ChatsScreen from "./src/screens/ChatsScreen";
+import Navigator from "./src/components/Navigation";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <ChatsScreen /> */}
-      <ChatScreen />
+      <Navigator />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "whitesmoke",
     justifyContent: "center",
     paddingVertical: 50,
   },

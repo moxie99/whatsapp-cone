@@ -1,14 +1,14 @@
-import { View, Text } from "react-native";
-import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { View, Text } from "react-native"
+import React from "react"
+import { NavigationContainer } from "@react-navigation/native"
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
-import ChatScreen from "../../screens/ChatScreen";
-import ChatsScreen from "../../screens/ChatsScreen";
-import MainTabNavigator from "./MainTabNavigator";
-import ContactScreen from "../../screens/ContactScreen";
+import ChatScreen from "../../screens/ChatScreen"
+import ChatsScreen from "../../screens/ChatsScreen"
+import MainTabNavigator from "./MainTabNavigator"
+import ContactScreen from "../../screens/ContactScreen"
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
 const Navigator = () => {
   return (
     <NavigationContainer>
@@ -25,7 +25,7 @@ const Navigator = () => {
         <Stack.Screen name="Contacts" component={ContactScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-  );
-};
+  )
+}
 
-export default Navigator;
+export default Navigator
